@@ -27,6 +27,20 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .hero-bg-video {
+      pointer-events: none; /* 클릭 방지 → 모바일 컨트롤 뜨는 것 예방 */
+    }
+
+    .hero-bg-video::-webkit-media-controls,
+    .hero-bg-video::-webkit-media-controls-enclosure,
+    .hero-bg-video::-webkit-media-controls-panel {
+      display: none !important;
+      -webkit-appearance: none;
+}
+
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -59,7 +73,14 @@
     <section id="hero" class="hero section dark-background">
 
       <!-- <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in"> -->
-      <video class="hero-bg-video" autoplay loop muted playsinline>
+      <video class="hero-bg-video"
+       autoplay
+       loop
+       muted
+       playsinline
+       webkit-playsinline
+       preload="auto"
+       id="bg-video">
         <source src="assets/img/hero-VIDEO.mp4" type="video/mp4">
       </video>
 
@@ -99,7 +120,12 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday :</strong> <span>19XX. 02. 08</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website :</strong> <span>-</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website :</strong> <span>-</span></li> -->
+                   <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Website :</strong>
+                    <a href="https://ajiajia9633-art.github.io/JH_Portfolio_B/" target="_blank">JH_Portfolio_B</a>
+                  </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone :</strong> <span>+82 010 3XX9 XX33</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City :</strong> <span>Busan, KOREA</span></li>
                 </ul>
@@ -206,7 +232,7 @@
               아이디어부터 최종 결과물까지 직접 참여하며 쌓아온 감각으로, 다양한 디자인 분야에서 의미 있는 성과를 만들어가고자 합니다.</em></p>
               <ul>
                 <li>Busan, KOREA</li>
-                <li>+82 010 3779 9633</li>
+                <li>+82 010 3XX9 XX33</li>
                 <li>ajiajia9633@gmail.com</li>
               </ul>
             </div><!-- Edn Resume Item -->
